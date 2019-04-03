@@ -14,6 +14,7 @@ import {
 } from "react-native";
 import Icon from 'react-native-vector-icons/Ionicons'
 import Category from './components/Explore/Category'
+import List from './components/Explore/List'
 
 const { height, width } = Dimensions.get('window')
 
@@ -43,7 +44,7 @@ class Explore extends Component {
                             <Icon name="ios-search" size={20} style={{ marginRight: 10 }} />
                             <TextInput
                                 underlineColorAndroid="transparent"
-                                placeholder="Try New Delhi"
+                                placeholder="filter or oreder by search ..."
                                 placeholderTextColor="grey"
                                 style={{ flex: 1, fontWeight: '700', backgroundColor: 'white' }}
                             />
@@ -74,56 +75,58 @@ class Explore extends Component {
                                        <Category imageUri={require('../assets/restaurant.jpg')}
                                         name="Resturant"
                                     />
-                                       <Category imageUri={require('../assets/restaurant.jpg')}
+                                     <Category imageUri={require('../assets/experiences.jpg')}
+                                        name="Experiences"
+                                    />
+                                     <Category imageUri={require('../assets/home.jpg')}
+                                        name="Home"
+                                    />
+                                     <Category imageUri={require('../assets/experiences.jpg')}
+                                        name="Experiences"
+                                    />
+                                          <Category imageUri={require('../assets/restaurant.jpg')}
                                         name="Resturant"
                                     />
+                                     <Category imageUri={require('../assets/experiences.jpg')}
+                                        name="Experiences"
+                                    />
+                                     <Category imageUri={require('../assets/home.jpg')}
+                                        name="Home"
+                                    />
+                                     <Category imageUri={require('../assets/experiences.jpg')}
+                                        name="Experiences"
+                                    />
+                                    
                                 </ScrollView>
                             </View>
                             <View style={{ marginTop: 40, paddingHorizontal: 20 }}>
                                 <Text style={{ fontSize: 24, fontWeight: '700' }}>
-                                    I am React Native created by abdullah 
+                                    I am React Native list
                                 </Text>
-                                <View style={{ width: width - 40, height: 200, marginTop: 20 }}>
-                                    <Image
-                                        style={{ flex: 1, height: null, width: null, resizeMode: 'cover', borderRadius: 5, borderWidth: 1, borderColor: '#dddddd' }}
-                                        source={require('../assets/home.jpg')}
-                                    />
-                                     <Text style={{ fontWeight: '100', marginTop: 10 }}>
-                                            A new selection of homes verified for quality & comfort
-                                        </Text>
-                                        <Button onPress={this._onPress} title="MORE" color="#999" accessibilityLabel="Tap on Me"/>
-
-                                </View>
-                                <View style={{ width: width - 40, height: 200, marginTop: 20 }}>
-                                    <Image
-                                        style={{ flex: 1, height: null, width: null, resizeMode: 'cover', borderRadius: 5, borderWidth: 1, borderColor: '#dddddd' }}
-                                        source={require('../assets/home.jpg')}
-                                    />
-                                    <Text style={{ fontWeight: '100', marginTop: 10 }}>
-                                            A new selection of homes verified for quality & comfort
-                                        </Text>
-                                        <Button onPress={this._onPress} title="MORE" color="#999" accessibilityLabel="Tap on Me"/>
-                                </View>
-                                <View style={{ width: width - 40, height: 200, marginTop: 20 }}>
-                                    <Image
-                                        style={{ flex: 1, height: null, width: null, resizeMode: 'cover', borderRadius: 5, borderWidth: 1, borderColor: '#dddddd' }}
-                                        source={require('../assets/home.jpg')}
-                                    />
-                                        <Text style={{ fontWeight: '100', marginTop: 10 }}>
-                                            A new selection of homes verified for quality & comfort
-                                        </Text>
-                                        <Button onPress={this._onPress} title="MORE" color="#999" accessibilityLabel="Tap on Me"/>
-                                </View>
-                                <View style={{ width: width - 40, height: 200, marginTop: 20 }}>
-                                    <Image
-                                        style={{ flex: 1, height: null, width: null, resizeMode: 'cover', borderRadius: 5, borderWidth: 1, borderColor: '#dddddd' }}
-                                        source={require('../assets/home.jpg')}
-                                    />
-                                        <Text style={{ fontWeight: '100', marginTop: 10 }}>
-                                            A new selection of homes verified for quality & comfort
-                                        </Text>
-                                        <Button onPress={this._onPress} title="MORE" color="#999" accessibilityLabel="Tap on Me"/>
-                                </View>
+                                <List imageUri={require('../assets/home.jpg')}
+                                        title=" A new selection of homes verified for quality & comfort"
+                                        />
+                                <List imageUri={require('../assets/home.jpg')}
+                                        title=" A new selection of homes verified for quality & comfort"
+                                        />
+                                <List imageUri={require('../assets/home.jpg')}
+                                        title=" A new selection of homes verified for quality & comfort"
+                                        />
+                                <List imageUri={require('../assets/home.jpg')}
+                                        title=" A new selection of homes verified for quality & comfort"
+                                        />
+                                <List imageUri={require('../assets/home.jpg')}
+                                        title=" A new selection of homes verified for quality & comfort"
+                                        />
+                                <List imageUri={require('../assets/home.jpg')}
+                                        title=" A new selection of homes verified for quality & comfort"
+                                        />
+                                <List imageUri={require('../assets/home.jpg')}
+                                        title=" A new selection of homes verified for quality & comfort"
+                                        />
+                                <List imageUri={require('../assets/home.jpg')}
+                                        title=" A new selection of homes verified for quality & comfort"
+                                        />
                             </View>
                         </View>
                     </ScrollView>
